@@ -111,6 +111,12 @@ test_labels = to_categorical(test_labels)
 network.fit(train_images, train_labels, epochs =5, batch_size = 128)
 
 
+# the network will start to iterate on the training data in mini-batches of 128 samples, 5 times over (each iteration over
+# all the training data is called an epoch). At each iteration, the network will compute the gradients of the weights with regard to the loss on the batch, and update the weights
+# accordingly. After these 5 epochs, the network will have performed 2,345 gradient
+# updates (469 per epoch = 60,000/128), and the loss of the network will be sufficiently low that the
+# network will be capable of classifying handwritten digits with high accuracy
+
 # In[14]:
 
 
