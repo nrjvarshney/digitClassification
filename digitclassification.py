@@ -7,6 +7,7 @@
 
 
 from tensorflow.keras.datasets import mnist
+# comment the above line an uncomment the below line if it throws errors 
 # from keras.datasets import mnist
 
 
@@ -54,6 +55,7 @@ plt.show()
 # In[13]:
 
 
+# remove tensorflow.keras from the below import statements if it throws errors
 from tensorflow.keras import models
 from tensorflow.keras import layers
 
@@ -123,10 +125,4 @@ network.fit(train_images, train_labels, epochs =5, batch_size = 128)
 
 test_loss, test_acc = network.evaluate(test_images, test_labels)
 test_acc
-
-
-# In[ ]:
-
-
-print(train_images.ndim)
 
